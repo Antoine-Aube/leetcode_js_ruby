@@ -1,0 +1,1 @@
+string = "My name is Antoine"
