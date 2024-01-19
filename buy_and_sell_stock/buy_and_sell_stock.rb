@@ -10,9 +10,9 @@ def max_profit(prices)
       if difference > max_profit
           max_profit = difference
       end
-      if price < lowest_stock
-          lowest_stock = price
-      end
+  if price < lowest_stock
+      lowest_stock = price
+  end
    end
   return max_profit
 end
