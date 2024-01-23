@@ -32,3 +32,10 @@ let string_1 = "[()]}";
 
 console.log(isValid(string));
 console.log(isValid(string_1));
+
+const people = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+];
+//cool way to visualize!
+console.table(people);
