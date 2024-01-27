@@ -26,7 +26,7 @@ def min_sub_array_len(target, nums)
 end
 
 
-nums = [2,3,1,2,4,3,3,1,2,1,1,2,2,4]
+nums = [2,3,1,0,4,3,0,1,2,1,1,1,2,4]
 target = 8
 
 puts min_sub_array_len(target, nums)
