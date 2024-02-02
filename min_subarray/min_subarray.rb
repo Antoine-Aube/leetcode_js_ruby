@@ -14,8 +14,9 @@ def min_sub_array_len(target, nums)
 
   nums.each_with_index do |num, end_i|
     sum += num
-
+    require 'pry';binding.pry
     while sum >= target
+      require 'pry';binding.pry
       min_length = [min_length, end_i - start_i + 1].min
       sum -= nums[start_i]
       start_i += 1
@@ -26,7 +27,8 @@ def min_sub_array_len(target, nums)
 end
 
 
-nums = [2,3,1,0,4,3,0,1,2,1,1,1,2,4]
-target = 8
+# nums = [2,3,1,0,4,3,0,1,2,1,1,1,2,4]
+nums = [2,3,1,2,4,3]
+target = 7
 
 puts min_sub_array_len(target, nums)
