@@ -5,17 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "rdbg",
-      "name": "Debug current file with rdbg",
+      "type": "node",
       "request": "launch",
-      "script": "${file}",
-      "args": [],
-      "askParameters": true
-    },
-    {
-      "type": "rdbg",
-      "name": "Attach with rdbg",
-      "request": "attach"
+      "name": "Launch Program",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/jumpgame/jumpgame.js"
     }
   ]
 }
