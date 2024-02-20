@@ -22,6 +22,28 @@ def generate(num_rows)
   triangle
 end
 
+#alternate_solution, a bit cleaner 
+
+# def generate(num_rows)
+# triangle = []
+
+# (0...num_rows).each do |row_index|
+#   row = Array.new(row_index + 1)
+#   row[0], row[-1] = 1, 1  # First and last element of each row are always 1.
+
+#   # Calculate middle elements
+#   (1...row_index).each do |i|
+#     row[i] = triangle[row_index - 1][i - 1] + triangle[row_index - 1][i]
+#   end
+
+#   triangle << row
+# end
+
+# triangle
+# end
+
+
+
 
 
 rows = 5
